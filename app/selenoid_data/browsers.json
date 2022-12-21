@@ -1,0 +1,20 @@
+{
+  "chrome": {
+    "default": "chrome_106.0",
+    "versions": {
+      "chrome_106.0": {
+        "image": "selenoid/chrome:106.0",
+        "port": "4444",
+        "path": "/",
+        "privileged": true
+      },
+      "chrome_106.0_VNC": {
+        "image": "selenoid/vnc:chrome_106.0",
+        "port": "4444",
+        "path": "/",
+        "privileged": true,
+        "sessionTimeout": "2m"
+      }
+    }
+  }
+}
